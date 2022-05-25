@@ -43,9 +43,15 @@ var myApp = new Vue({
             if(this.activeSlide < 0){
                 this.activeSlide = this.slides.length - 1;
             }
+        },
+        clickOnSlide(element){
+            console.log(this.slides[element].title);
+            this.activeSlide = element;
         }
     }
 });
+
+
 
 const slides = [
     {
