@@ -1,6 +1,7 @@
 var myApp = new Vue({
     el : "#app",
     data : {
+        activeSlide : 0,
         slides : [
             {
                 image: 'img/01.jpg',
